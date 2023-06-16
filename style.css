@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Source+Code+Pro:wght@300;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+html body {
+    width: 100vw;
+    height: 100vh;
+}
+.sidebar {
+    /* background-color: aqua; */
+    background-color: rgb(116, 115, 115);
+    /* width: 434px; */
+    font-family: 'Raleway', sans-serif;
+    height: 800px;
+    transition: transform 0.3s ease-in;
+    position: absolute;
+}
+
+.sidebar nav {
+    padding: 35px;
+
+}
+
+.sidebar nav li {
+    /* to remove bullets */
+    list-style: none;
+    font-size: 20px;
+    padding: 24px 0;
+}
+.sidebar nav li a{
+    /* to remove lines under hyperlink */
+    text-decoration-line:underline;
+    color: rgb(0, 0, 0);
+  
+    
+}
+
+.main {
+    background-color: rgba(0, 139, 163, 0.753);
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Info Container will be flex box */
+.infocontainer{
+    /* background-color: rgb(53, 53, 70); */
+    height: 58vh;
+    width: 84vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+    /* font-family: 'Source Code Pro', monospace;
+    font-family: 'Raleway', sans-serif; */
+    font-size: 26px;
+}
+
+.hello{
+    font-size: 2em;
+}
+.name{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Fira sans', sans-serif;
+}
+.about{
+    font-size: 1.75em;
+}
+
+.buttons{
+    margin-top: 13px;
+    padding: 6px;
+    border-radius: 25px;
+    color: white;
+    background-color: #6c6772;
+    
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+/* 
+.buttons :hover{
+    background-color: rgb(137, 60, 60);
+    color: #7b4ea4;
+} */
+a :hover{
+    background-color: rgb(82, 69, 69);
+    color: #ebebeb;
+    width: 200px;
+}
+
+.devpic img{
+    height: 48vh;
+    border-radius: 50px;
+}
+
+.contactform{
+     padding: 0 85px;
+    /* padding-top: 80px; */
+    font-family: 'Fira sans', sans-serif;
+    /* margin: 0 88px; */
+    /* margin: 0 88px;
+    margin-left: 1px;
+    margin-bottom: 6px; */ 
+    margin: 42px;
+    margin-left: 1px;
+    margin-bottom: 6px;
+}
+
+
+.contactform h2{
+    font-family: 'Source Code Pro', monospace;
+    padding: 12px 0;
+}
+
+.contactform form div{
+    padding : 10px 0;
+    flex-direction: column;
+    display: flex;
+}
+.contactform form div input{
+    width: 20vw;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 1px;
+    margin : 3px 0 0 0 ;
+}
+#emailHelp{
+    font-size: 11px;
+    margin: 0 8px;
+    color: midnightblue;
+}
+
+#form-check{
+    flex-direction: row;
+}
+
+#form-check input{
+    width: 12px;
+    margin :2px;
+    padding-right: 12px;
+}
+
+#form-check label{
+    font-size: 14px;
+}
+
+.contactform form button{
+    margin :2px;
+    padding: 8px;
+    border-radius: 22px;
+    /* color: white;
+    background-color: #7b4ea4; */
+    color: white;
+    background-color: #6c6772;
+    font-weight: bold;
+}   
+
+.contactform form button :hover{
+    background-color: rgb(82, 69, 69);
+    color: #ebebeb;
+    width: 200px;
+}
+
+.project{
+   margin: 20px;
+   font-family: 'Fira sans', sans-serif;
+}
+
+.projectscontainor{
+    margin: 81px;
+    margin-left: 86px;
+}
+
+
+h1{
+    font-family: 'Fira sans', sans-serif;
+    margin: 19px;
+}
+
+p{
+    font-family: 'Source Code Pro', monospace;
+    margin: 12px;
+}
+
+.intro{
+    margin: 110px;
+}
+
+.intro h2{
+    font-family: 'Fira sans', sans-serif;
+    margin: 12px;
+}
+
+.into p{
+    font-family: 'Source Code Pro', monospace;
+    margin: 12px;
+}
+
+.skill{
+    width: 23px;
+    height: 14px;
+    background-color: rgb(95, 94, 95);
+    margin: 2px;
+    border: 2px solid black;
+    
+}
+
+.skillcontainer{
+    padding: 12px;
+}
+
+.skillitem{
+    align-items: center;
+    display: flex;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+}
+
+.t100{
+    width: 236px;
+}
+
+.t50{
+    width: 125px;
+}
+
+.t25{
+    width: 75px;
+}
+
+.sidebarGo{
+    transform: translate(-443px , 0px);
+    position: absolute;
+}
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.ham{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.cross{
+    margin-left: 136px;
+    margin-top: 10px;
+}
+
+@media  (max-width: 1200px){
+*{
+    /* background-color: aquamarine; */
+}
+.devpic{
+    display: none;
+}
+.intro , .projectscontainor, .contactform{
+    margin:  51px 8px;
+}
+/* .sidebar{
+    transform: translate(-1736px , 0px);
+    position: absolute;
+} */
+}
